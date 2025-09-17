@@ -1,5 +1,4 @@
 # 「LMラジオ: 晃波放送」
-![preview](preview.gif)
 * [本作品の制作にはAIを使用しています。](#制作におけるai利用について)
 * 本作品はフィクションであり、表現内容は現実と一切関係ありません。
 * [ダウンロードはこちらから。](https://github.com/lost-nd-xxx/LuminousModulation_Radio/releases/latest/download/LuminousModulation_Radio.nar)
@@ -13,6 +12,8 @@
 
 時には雨音と共に聞こえてくる歌声に、\
 時には遠い街の日常に、そっと耳を傾けてください。
+
+![preview](preview.gif)
 
 ---
 ## 動作環境

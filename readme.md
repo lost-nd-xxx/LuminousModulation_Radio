@@ -1,6 +1,6 @@
 # 「LMラジオ: 晃波放送」
 ![preview](preview.gif)
-* [本作品の制作にはAIを使用しています。](https://github.com/lost-nd-xxx/LuminousModulation_Radio/blob/main/readme.txt)
+* [本作品の制作にはAIを使用しています。](#制作におけるai利用について)
 * 本作品はフィクションであり、表現内容は現実と一切関係ありません。
 * [ダウンロードはこちらから。](https://github.com/lost-nd-xxx/LuminousModulation_Radio/releases/latest/download/LuminousModulation_Radio.nar)
 
@@ -22,6 +22,22 @@
 
 ### 「伺か」や「ゴースト」がわからない方向けの案内
 * https://keshiki.nobody.jp/
+
+---
+## 制作におけるAI利用について
+本作品の制作において、以下のAI支援ツールを使用しています。
+
+* プログラム開発
+  * Claude（Anthropic）によるコード生成・デバッグ支援
+
+* コンテンツ制作
+  * Claudeによる文章作成・編集支援
+    * ラジオ番組の台本・ニュース原稿・音楽番組解説等
+
+* 企画・設計
+  * Claudeによるブレインストーミング・構成検討
+
+最終的な品質確認は作者が責任を持って行っています。
 
 ---
 ## 謝辞/利用素材等

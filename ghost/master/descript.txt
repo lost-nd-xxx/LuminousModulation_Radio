@@ -1,0 +1,20 @@
+charset,UTF-8
+
+craftman,lost_nd_xxx
+craftmanw,ろすえん
+craftmanurl,https://lnx.flop.jp/
+
+homeurl,https://raw.githubusercontent.com/lost-nd-xxx/LuminousModulation_Radio/main/
+
+name,LMラジオ: 晃波放送
+type,ghost
+
+sakura.name,LMラジオ_0
+kero.name,LMラジオ_1
+
+readme,readme.txt
+readme.charset,UTF-8
+
+icon,lmradio_icon.ico
+
+shiori,satori.dll

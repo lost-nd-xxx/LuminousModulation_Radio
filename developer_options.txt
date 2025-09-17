@@ -1,0 +1,7 @@
+.git/,nonar,noupdate
+ghost/master/satori_savedata.txt,nonar,noupdate
+ghost/master/satori_savebackup.txt,nonar,noupdate
+ghost/master/ssp_shiori_log.txt,nonar,noupdate
+.gitignore,nonar,noupdate
+preview.gif,nonar,noupdate
+readme.md,nonar,noupdate

@@ -1,0 +1,132 @@
+＃ ラジオ局「SoundScapes」
+＃ 雨天時歌詞パターン
+＃=================================================================
+
+＃=====================================
+＃ 雨系天気の音楽（全時間帯対応）
+＃=====================================
+
+＠soundscapes_lyric_朝_Aメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+（soundscapes_lyric_語彙_雨系_具象）\w3　（soundscapes_lyric_語彙_雨系_形容詞）\w3　朝を染める
+雨の（soundscapes_lyric_語彙_雨系_抽象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_雨系_形容詞）満たされて
+（soundscapes_lyric_語彙_雨系_形容詞）\w3　心に\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_雨系_抽象）
+朝霧雨の\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）
+（soundscapes_lyric_語彙_雨系_抽象）と（soundscapes_lyric_語彙_雨系_抽象）\w3　（soundscapes_lyric_語彙_雨系_形容詞）調べ
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨音に弾ませて
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨に染まりて
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　朝の雫と
+新しい朝に\w3　（soundscapes_lyric_語彙_雨系_具象）の祝福
+
+＠soundscapes_lyric_朝_Bメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+（soundscapes_lyric_語彙_雨系_抽象）に\w3　（soundscapes_lyric_語彙_雨系_具象）宿る
+（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_動詞_終止形）\w3　（soundscapes_lyric_語彙_雨系_抽象）
+窓辺の（soundscapes_lyric_語彙_雨系_具象）\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）を刻む
+（soundscapes_lyric_語彙_雨系_具象）と（soundscapes_lyric_語彙_雨系_具象）の\w3　（soundscapes_lyric_語彙_雨系_形容詞）協奏
+雨降る朝の\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨の調べと
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　朝霧の中で
+希望に濡れた\w3　（soundscapes_lyric_語彙_雨系_具象）の調べ
+
+＠soundscapes_lyric_朝_サビ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+（soundscapes_lyric_語彙_雨系_抽象）、（soundscapes_lyric_語彙_雨系_抽象）
+雨の朝に\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_雨系_抽象）
+（soundscapes_lyric_語彙_雨系_形容詞）\w3　希望の調べ
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨音と共に
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　朝の雫に
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨降る朝に
+（soundscapes_lyric_語彙_雨系_具象）の\w3　（soundscapes_lyric_語彙_雨系_抽象）響く
+雨降る朝に\w3　新しい（soundscapes_lyric_語彙_雨系_抽象）を
+清々しい（soundscapes_lyric_語彙_雨系_具象）と\w3　（soundscapes_lyric_語彙_雨系_抽象）の歌声
+
+＠soundscapes_lyric_昼_Aメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+昼下がりの（soundscapes_lyric_語彙_雨系_具象）\w3　（soundscapes_lyric_語彙_雨系_形容詞）
+（soundscapes_lyric_語彙_雨系_形容詞）と\w3　（soundscapes_lyric_語彙_動詞_終止形）午後の（soundscapes_lyric_語彙_雨系_抽象）
+雨雲に塗りつぶされた\w3　（soundscapes_lyric_語彙_雨系_形容詞）空を見上げて
+（soundscapes_lyric_語彙_雨系_具象）の\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）
+（soundscapes_lyric_語彙_雨系_抽象）と（soundscapes_lyric_語彙_雨系_抽象）\w3　午後にたゆたう
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨雲の下で
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　午後の雨と
+静かな雨の昼下がり\w3　（soundscapes_lyric_語彙_雨系_具象）と共に
+
+＠soundscapes_lyric_昼_Bメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+雨音（soundscapes_lyric_語彙_動詞_終止形）\w3　（soundscapes_lyric_語彙_雨系_抽象）の調べ
+（soundscapes_lyric_語彙_雨系_形容詞）\w3　想い出\w3　呼び起こして
+雫珠に宿る\w3　（soundscapes_lyric_語彙_感情_名詞_ニュートラル）の記憶
+（soundscapes_lyric_語彙_雨系_具象）と（soundscapes_lyric_語彙_雨系_具象）の\w3　（soundscapes_lyric_語彙_動詞_終止形）午後
+（soundscapes_lyric_語彙_雨系_形容詞）時を\w3　（soundscapes_lyric_語彙_雨系_抽象）と共に
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨の午後に
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　静寂の中で
+雨音に彩られた\w3　（soundscapes_lyric_語彙_雨系_具象）の午後
+
+＠soundscapes_lyric_昼_サビ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_具象）\w3　（soundscapes_lyric_語彙_雨系_抽象）運ぶ
+（soundscapes_lyric_語彙_雨系_形容詞）時間は\w3　午後に降り注ぐ
+雨の（soundscapes_lyric_語彙_雨系_形容詞）調べと\w3　（soundscapes_lyric_語彙_雨系_抽象）の歌
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨の午後に
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　静かな雨音と
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　昼下がりの雫
+午後の（soundscapes_lyric_語彙_雨系_具象）と\w3　（soundscapes_lyric_語彙_雨系_抽象）の調和
+（soundscapes_lyric_語彙_雨系_形容詞）空に\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_雨系_抽象）
+雨降る午後に\w3　心安らぐ（soundscapes_lyric_語彙_雨系_具象）の詩
+
+＠soundscapes_lyric_夜_Aメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+夜雨は（soundscapes_lyric_語彙_動詞_終止形）\w3　（soundscapes_lyric_語彙_雨系_形容詞）窓に涙跡
+（soundscapes_lyric_語彙_雨系_抽象）に\w3　（soundscapes_lyric_語彙_雨系_形容詞）こころ委ねて
+（soundscapes_lyric_語彙_雨系_具象）の\w3　（soundscapes_lyric_語彙_雨系_形容詞）音色の響く
+夜の（soundscapes_lyric_語彙_雨系_具象）は\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）運ぶ
+（soundscapes_lyric_語彙_雨系_抽象）と（soundscapes_lyric_語彙_雨系_抽象）\w3　夜を彩る
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　夜雨の調べ
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　闇と共に
+雨降る夜に\w3　（soundscapes_lyric_語彙_雨系_具象）の調べが宿る
+
+＠soundscapes_lyric_夜_Bメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+（soundscapes_lyric_語彙_雨系_抽象）に\w3　満ち満ちる夜の静寂
+静謐と\w3　（soundscapes_lyric_語彙_雨系_具象）の協奏
+（soundscapes_lyric_語彙_雨系_形容詞）心の奥で\w3　（soundscapes_lyric_語彙_雨系_抽象）響く
+（soundscapes_lyric_語彙_雨系_具象）と（soundscapes_lyric_語彙_雨系_具象）が\w3　夜を（soundscapes_lyric_語彙_動詞_終止形）
+夜雨の\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）\w3　心に宿る
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　夜雨の音色
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　静寂と共に
+雨に濡れた\w3　夜の（soundscapes_lyric_語彙_雨系_具象）は歌う
+
+＠soundscapes_lyric_夜_サビ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+雨降る夜に\w3　（soundscapes_lyric_語彙_雨系_抽象）を感じて
+（soundscapes_lyric_語彙_雨系_抽象）の\w3　（soundscapes_lyric_語彙_雨系_形容詞）調べを
+（soundscapes_lyric_語彙_雨系_形容詞）旋律\w3　夜に響いて
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　雨の夜に
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　闇と絡みあい
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　夜雨の調べ
+夜雨と\w3　（soundscapes_lyric_語彙_雨系_抽象）の協奏曲
+（soundscapes_lyric_語彙_雨系_具象）よ、（soundscapes_lyric_語彙_雨系_形容詞）夜の歌を
+雨に濡れた夜に\w3　（soundscapes_lyric_語彙_雨系_抽象）の詩を
+
+＠soundscapes_lyric_深夜_Aメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+深夜に響く（soundscapes_lyric_語彙_雨系_具象）の調べ……
+（soundscapes_lyric_語彙_雨系_抽象）\w3　（soundscapes_lyric_語彙_動詞_終止形）……
+（soundscapes_lyric_語彙_雨系_形容詞）闇を濡らして……
+しじまを破る（soundscapes_lyric_語彙_雨系_具象）の音色……
+（soundscapes_lyric_語彙_雨系_抽象）と（soundscapes_lyric_語彙_雨系_抽象）の\w3　神秘なる対話……
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　深夜の雨滴に……
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　闇雨の韻律に……
+夜更けの（soundscapes_lyric_語彙_雨系_具象）\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）運ぶ
+
+＠soundscapes_lyric_深夜_Bメロ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+雨音だけが\w3　闇を支配して……
+（soundscapes_lyric_語彙_雨系_抽象）と\w3　沈黙の対話……
+（soundscapes_lyric_語彙_雨系_具象）は\w3　永劫刻んで……
+深夜に（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_雨系_抽象）の囁き……
+（soundscapes_lyric_語彙_雨系_形容詞）時間と\w3　（soundscapes_lyric_語彙_雨系_具象）の舞踏……
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　深夜の雨脈に……
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　闇雨の韻律に……
+静寂破る\w3　（soundscapes_lyric_語彙_雨系_具象）の調べ……
+
+＠soundscapes_lyric_深夜_サビ	（北部_天気）==雨||（北部_天気）==雷雨||（北部_天気）==嵐
+雨降る深夜に\w3　（soundscapes_lyric_語彙_雨系_抽象）宿る……
+（soundscapes_lyric_語彙_雨系_抽象）と（soundscapes_lyric_語彙_雨系_抽象）の\w3　交響……
+（soundscapes_lyric_語彙_雨系_形容詞）\w3　無音の調べ\w3　暗黒を満たす……
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）……　深夜の雨滴に……
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）……　闇と溶けあい……
+想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）……　虚無の彼方へ……
+（soundscapes_lyric_語彙_雨系_具象）は\w3　（soundscapes_lyric_語彙_動詞_終止形）夜の\w3　深奥へ……
+闇と（soundscapes_lyric_語彙_雨系_抽象）の\w3　囁き……
+深夜の雨滴よ\w3　（soundscapes_lyric_語彙_雨系_形容詞）（soundscapes_lyric_語彙_雨系_抽象）を歌え……

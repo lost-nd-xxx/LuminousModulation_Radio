@@ -1,0 +1,23 @@
+# SSPゴースト用 .gitignore
+
+# ベースウェア等動作用ファイル
+ghost/master/profile/
+shell/master/profile/
+
+# 追加シェル（shell/master以外のフォルダ）
+shell/*/
+!shell/master/
+
+# 開発用のログファイル
+ghost/master/ssp_shiori_log.txt
+
+# セーブデータ
+ghost/master/satori_savedata.txt
+ghost/master/satori_savebackup.txt
+
+# その他の一時ファイル・システムファイル
+*.tmp
+*.log
+*~
+.DS_Store
+Thumbs.db

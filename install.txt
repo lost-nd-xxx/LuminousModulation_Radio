@@ -1,0 +1,4 @@
+charset,UTF-8
+type,ghost
+name,LMラジオ: 晃波放送
+directory,lnx_LuminousModulation_Radio

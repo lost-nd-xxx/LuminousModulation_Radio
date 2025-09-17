@@ -1,0 +1,104 @@
+＃ベースウェアの発するイベント類と、それらに対応するための処理など。
+＃初回起動もここ
+
+
+＊OnBoot
+＞OnTalk
+
+＊OnClose
+（OnTalk）\w9\w9
+＃テキスト表示完了後に即終了してしまわないように少しウェイトを入れている
+
+
+＊OnKeyPress
+＞（R0）が押された
+
+＊tが押された
+＄メニュー閉じるフラグ	0
+＞OnTalk
+
+＊mが押された
+＄メニュー閉じるフラグ	0
+＞メニュー
+
+
+＊OnSurfaceRestore
+\1\s[10]\0\s[0]
+＃サーフェス初期化
+
+＊OnShellChanged
+＞OnSurfaceRestore
+＃特に喋ることはないがサーフェスは表示しておく
+
+＊OnWindowStateRestore
+＞OnSurfaceRestore
+＃特に喋ることはないがサーフェスは表示しておく
+
+＊OnBalloonBreak
+＄返信ヘッダ「Marker」	
+＞OnSurfaceRestore
+＃バルーンが閉じられた
+
+＊OnBalloonClose
+＄返信ヘッダ「Marker」	
+＞OnSurfaceRestore
+＃バルーンが閉じられた
+
+＊OnBalloonTimeout
+＄返信ヘッダ「Marker」	
+＞OnSurfaceRestore
+＃バルーンが閉じられた
+
+
+＊OnFirstBoot
+＄返信ヘッダ「Marker」	試験放送中 / ◆LMラジオ
+：ようこそ、LMラジオへ。
+晃波放送の試験放送を開始いたします。\x[noclear]
+\n[-50]
+このラジオでは5つの局からの放送をお聞きいただけます。
+\![*]太陽協会ニュース(公営/報道)
+\![*]太陽協会教育放送(公営/教育・広報)
+\![*]こっと～うぇいぶ(技術・生活情報)
+\![*]ＬＭ残光城砦　　(トーク番組)
+\![*]SoundScapes　　 (音楽専門)\x[noclear]
+\n[-50]
+操作は簡単です。
+\![*]アンテナ　φ：放送間隔を調整できます
+\![*]ダイヤル　φ：放送局を変更できます
+\![*]スピーカーφ：今すぐ放送を聞けます\x[noclear]
+\n[-50]
+それでは、放送をお楽しみください。
+\_w[2000]\![raise,OnBalloonClose]
+
+
+＊OnSatoriLoad
+＄文「＊」の重複回避	有効、起動中
+＄単語群「＊」の重複回避	有効、起動中
+＄tmp	（nop,（判定変動））
+＄soundscapes_talk_count	（乱数0～7）
+＄メニュー閉じるフラグ	0
+
+
+＃ネットワーク更新
+＊OnUpdateBegin
+＄返信ヘッダ「Marker」	system-msg
+：ネットワーク更新があるか確認します。
+
+＊OnUpdateReady
+＄返信ヘッダ「Marker」	system-msg
+：（calc,（R0）+1）件の更新がありました。
+更新を開始します。
+
+＊OnUpdateComplete
+＄返信ヘッダ「Marker」	system-msg
+＞OnUpdateComplete_none	（equal,（R0）,none）
+：更新完了しました。
+
+＊OnUpdateComplete_none
+＄返信ヘッダ「Marker」	system-msg
+：更新はありませんでした。
+
+＊OnUpdateFailure
+＄返信ヘッダ「Marker」	system-msg
+：ネットワーク更新に失敗しました。
+理由は「\_?（R0）\_?」です。

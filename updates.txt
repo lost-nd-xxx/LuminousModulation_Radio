@@ -9,7 +9,7 @@ file,ghost/master/dic_menu.txtb5e76af98c0d3d1353fa6b5b5666dbd6size=3978date=2
 file,ghost/master/dic_talk_coral_bridge.txt4c062b5e8efcf6610779a13056e85edasize=63153date=2026-10-19T14:31:33
 file,ghost/master/dic_talk_core.txtc24e3aa1240e7102fc3da072d36837d1size=3477date=2026-10-19T15:02:30
 file,ghost/master/dic_talk_cottowave.txtbee7396ed7faca87539e9b562eb133ccsize=77425date=2026-10-19T15:34:40
-file,ghost/master/dic_talk_lm_castle.txtfca5a0a5aff04dd4241bf2c595a2e18esize=80426date=2026-10-19T15:44:17
+file,ghost/master/dic_talk_lm_castle.txtb249d3798847fd0cacc693256e23861bsize=85547date=2026-10-19T16:11:31
 file,ghost/master/dic_talk_solar_education.txtd45b86f0ac9f4f1cbbaf3b4b20b2df2esize=95603date=2026-10-19T15:35:34
 file,ghost/master/dic_talk_solar_news.txt63f4af1bf3d0ded0f53c7195869358fesize=87771date=2026-10-19T15:14:05
 file,ghost/master/dic_talk_soundscapes_core.txt092ea3720959c9621d93609a2a087726size=7022date=2026-10-19T14:44:12

@@ -31,3 +31,8 @@
 ＄soundscapes_current_title	虚ろな響き
 ＄soundscapes_current_instrument	ピアノ
 ＄メニュー閉じるフラグ	0
+＄solar_news_alert	normal
+＄solar_news_alert_aired	0
+＄solar_news_alert_band	朝
+＄solar_news_alert_prev	normal
+＄solar_news_alert_prev_band	朝

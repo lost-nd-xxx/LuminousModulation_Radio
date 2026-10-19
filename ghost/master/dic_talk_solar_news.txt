@@ -267,6 +267,8 @@
 災厄対策のため、協会派遣の護衛部隊による警備が強化されている区間があります。
 道路整備の影響で、通常より時間のかかる区間が数か所あります。
 南部からの交易隊が、昨夜遅くに到着しました。【r】干物と塩、それに南部産の綿布が、今日から中央市場に並ぶ予定です。
+西の街道で、輸送隊が動物型災厄の群れに行く手をふさがれ、途中の宿場へ引き返しました。【r】護衛を増やして、明朝あらためて出発する予定です。
+南の街道の宿場から、街道沿いの林で災厄の気配が続いているとの連絡がありました。【r】街道の見張りは宿場の周りに限られるため、宿場を出る隊列は、昼のうちにまとまって進むよう求められています。
 
 ＠solar_news_trade_route_status	（中央_天気）==雨||（中央_天気）==雷雨
 雨のため、街道の土の区間がぬかるんでいます。【r】荷車の隊列は速度を落として進んでおり、到着は予定より遅れる見込みです。
@@ -284,35 +286,102 @@
 （when,（乱数1～3）==1,（solar_news_current_personality_morning）がお伝えします。【r】）協会安全管理部よりご報告いたします。【p】現在の安全状況についてです。【r】（solar_news_danger_level）
 （when,（乱数1～3）==1,（solar_news_current_personality_morning）です。【r】）災厄監視センターからの最新報告をお伝えします。【p】本日の危険度評価です。【r】（solar_news_danger_level）
 
+＃=====================================
+＃ 警戒状況（時間帯ごとに 1 つ決め、どの放送でも同じものを伝える）
+＃=====================================
+＃ ＄solar_news_alert: normal か、出来事（west_sprout / east_gate / north_pack）
+＃ 出来事は 1 回の判定で 3/48（1 日に 1 度でも起きるのは約 23%）。都市が頻繁に脅かされる印象にしないため
+＃ 出来事を放送したら、次の時間帯の最初の状況報告で、1 度だけ結末を伝える
+
+＊ニュース警戒判定
+＄solar_news_alert_prev	（when,（solar_news_alert_aired）==1,（solar_news_alert）,normal）
+＄solar_news_alert_prev_band	（solar_news_alert_band）
+＄solar_news_alert	（whenlist,（乱数1～48）,==1,west_sprout,==2,east_gate,==3,north_pack,normal）
+＄solar_news_alert	（when,（solar_news_alert）==（solar_news_alert_prev）,normal,（solar_news_alert））
+＄solar_news_alert_band	（現在の時間帯）
+＄solar_news_alert_aired	0
+
+＃ 詳しい報告（朝・夜の安全情報）
 ＠solar_news_danger_level
+（solar_news_alert_followup_（solar_news_alert_prev））（set,solar_news_alert_prev,normal）（solar_news_alert_full_（solar_news_alert））（set,solar_news_alert_aired,1）
+
+＃ 一言の報告（昼の発表・深夜の警戒情報）
+＠solar_news_alert_short
+（solar_news_alert_followup_（solar_news_alert_prev））（set,solar_news_alert_prev,normal）（set,solar_news_alert_aired,1）（solar_news_alert_short_（solar_news_alert））
+
+＠solar_news_alert_full_normal
 災厄対策本部によりますと、各地の警戒レベルは平常です。
 探知網に目立った反応はなく、警戒レベルは平常を維持しています。
 各地の監視哨からの定時報告をまとめると、警戒レベルは平常です。
-協会防備部の発表では、本日も平常レベルです。【r】昨日からの変化はありません。
+協会防備部の発表では、警戒レベルは平常です。【r】各監視哨からの定時報告にも、気になる記載はありませんでした。
 災厄探知員による夜間の見回りでも異常はなく、平常レベルが続いています。
 本日の警戒レベルは「平常」です。
 南の外壁から離れた荒れ地で、動物型災厄のものとみられる足跡が見つかりました。【r】災厄探知員が調べていますが、探知網に反応はなく、警戒レベルは平常です。
 東の街道で、輸送隊が遠くを移動する動物型災厄を見かけたとの報告がありました。【r】街道から離れていく方角で、武僧隊が見張りを続けています。【r】都市部は平常レベルです。
-先週見つかった植物型災厄の株は、駆除のあとの見回りでも、新しい株は見つかっていません。【r】警戒レベルは平常です。
+南の郊外の畑では、植物型災厄の株が出やすい畦を、駆除班が見回っています。【r】今回の見回りでは新しい株は見つからず、警戒レベルは平常です。
 協会防備部が、各監視哨の銀の弾の備蓄を点検しました。【r】配備に不足はなく、警戒レベルは平常です。
 西の監視哨では、探知用の晃石の交換作業が昨日のうちに終わりました。【r】作業中も見張りを増やしており、警戒レベルは平常のままです。
 中央の監視塔で、探知員の交代がありました。【r】引き継ぎのあいだも見張りは途切れておらず、平常レベルが保たれています。
 昨夜、北の監視哨から動物型災厄1体の接近が報告され、一時的に低危険度となりました。【r】武僧隊が銀の弾で駆除を終え、今朝には平常レベルに戻っています。
-西の郊外の畑の外れで、植物型災厄の若い株が見つかりました。【r】周辺は低危険度に指定され、本日中に駆除班が処理にあたります。【r】市街への影響はありません。
-晃波探知網が昨夜、郊外で小さな反応をとらえたため、東門の周辺は低危険度となっています。【r】念のため、東門からの外出は護衛付きに限られます。
 
 ＃ 天気・季節で足す報告（結論は平常のまま）
-＠solar_news_danger_level	（中央_天気）==雪
+＠solar_news_alert_full_normal	（中央_天気）==雪
 雪で見張り台からの見通しが悪くなっています。【r】協会防備部は見張りの交代を増やし、探知網の確認も重ねています。【r】警戒レベルは平常です。
 
-＠solar_news_danger_level	（中央_天気）==嵐||（中央_天気）==雷雨
+＠solar_news_alert_full_normal	（中央_天気）==嵐||（中央_天気）==雷雨
 荒天のため、外壁の外の見回りは取りやめています。【r】探知網での監視は続いており、警戒レベルは平常です。
 
-＠solar_news_danger_level	（中央_天気）==雨
+＠solar_news_alert_full_normal	（中央_天気）==雨
 雨で足跡が残りにくいため、見回りの探知員を増やしています。【r】現在の警戒レベルは平常です。
 
-＠solar_news_danger_level	（中央_季節）==春
+＠solar_news_alert_full_normal	（中央_季節）==春
 春は、植物型災厄が根を広げやすい時期です。【r】外壁の周りの見回りを増やしていますが、現在の警戒レベルは平常です。
+
+＃ 出来事は、この時間帯に初めて伝えるとき（aired==0）と、2 度目から（aired==1）で言い方を分ける
+＠solar_news_alert_full_west_sprout	（solar_news_alert_aired）==0
+西の郊外の畑の外れで、植物型災厄の若い株が見つかりました。【r】周辺は低危険度に指定され、駆除班が処理にあたっています。【r】市街への影響はありません。
+
+＠solar_news_alert_full_west_sprout	（solar_news_alert_aired）==1
+西の郊外で、植物型災厄の若い株の駆除が続いています。【r】畑の外れの一帯は低危険度のままで、近づかないよう呼びかけられています。【r】ほかの地域は平常です。
+
+＠solar_news_alert_full_east_gate	（solar_news_alert_aired）==0
+晃波探知網が郊外で小さな反応をとらえたため、東門の周辺は低危険度となっています。【r】念のため、東門からの外出は護衛付きに限られます。
+
+＠solar_news_alert_full_east_gate	（solar_news_alert_aired）==1
+東門の外で、晃波探知網の小さな反応が続いています。【r】災厄探知員が反応の元を調べており、東門の周辺は低危険度のままです。【r】東門からの外出は、護衛付きに限られます。
+
+＠solar_news_alert_full_north_pack	（solar_news_alert_aired）==0
+北の監視哨から、動物型災厄2体が北門の外の林に入ったとの報告がありました。【r】北門の周辺は低危険度に指定され、武僧隊が林の見張りについています。【r】北門の外での薪集めは見合わせてください。
+
+＠solar_news_alert_full_north_pack	（solar_news_alert_aired）==1
+北門の外の林に、動物型災厄2体がとどまっています。【r】武僧隊が見張りを続けており、北門の周辺は低危険度のままです。【r】ほかの地域は平常です。
+
+＠solar_news_alert_short_normal
+警戒レベルは、全地域で平常です。
+各地の監視哨からの報告では、警戒レベルは平常です。
+現在のところ、全地域で平常レベルが維持されています。
+
+＠solar_news_alert_short_west_sprout
+西の郊外の畑の外れは、植物型災厄の株のため低危険度です。【r】ほかの地域は平常レベルです。
+
+＠solar_news_alert_short_east_gate
+東門の周辺は、探知網の反応のため低危険度です。【r】東門からの外出は、護衛付きに限られます。
+
+＠solar_news_alert_short_north_pack
+北門の周辺は、林に入った動物型災厄のため低危険度です。【r】北門の外での薪集めは見合わせてください。
+
+＃ 前の時間帯に伝えた出来事の結末（normal は何も言わない）
+＠solar_news_alert_followup_normal
+（nop,）
+
+＠solar_news_alert_followup_west_sprout
+（solar_news_alert_prev_band）のニュースでお伝えした、西の郊外の植物型災厄の株です。【r】駆除班が根まで掘り起こして処理を終え、低危険度の指定は解除されました。【p】
+
+＠solar_news_alert_followup_east_gate
+（solar_news_alert_prev_band）のニュースでお伝えした、東門の外の反応です。【r】災厄探知員の調べで、小型の動物型災厄1体と分かり、武僧隊が銀の弾で駆除しました。【r】東門の周辺は平常レベルに戻っています。【p】
+
+＠solar_news_alert_followup_north_pack
+（solar_news_alert_prev_band）のニュースでお伝えした、北門の外の動物型災厄2体です。【r】武僧隊が林から追い出し、銀の弾で駆除しました。【r】北門の周辺は平常レベルに戻り、薪集めも再開できます。【p】
 
 ＠solar_news_朝_regional_weather
 各地の天気をお伝えします。【p】中央では（中央_天気）、東部では（東部_天気）、南部では（南部_天気）、西部では（西部_天気）、北部では（北部_天気）の予報です。【p】（solar_news_regional_note）
@@ -436,8 +505,8 @@
 （solar_news_昼_update_brief）
 
 ＠solar_news_昼_breaking_brief
-（when,（乱数1～3）==1,（solar_news_current_personality_daytime）です。【p】）協会本部より発表がありました。【r】先ほど開催された定例会議において、各地域の安全状況に関する詳細な分析結果が報告されました。【r】現在のところ、全地域で平常レベルが維持されており、市民生活に支障はございません。
-（when,（乱数1～3）==1,キャスターの（solar_news_current_personality_daytime）より、）各地域の状況について報告があります。【r】協会の地域統括部からの最新報告によりますと、午前中に実施された定期監視活動により、すべての監視ポイントで正常値が確認されました。【r】これにより、引き続き安全な環境が保たれていることが確認されております。
+（when,（乱数1～3）==1,（solar_news_current_personality_daytime）です。【p】）協会本部より発表がありました。【r】先ほど開催された定例会議において、各地域の安全状況に関する詳細な分析結果が報告されました。【p】（solar_news_alert_short）
+（when,（乱数1～3）==1,キャスターの（solar_news_current_personality_daytime）より、）各地域の状況について報告があります。【r】協会の地域統括部が、午前中の定期監視活動の結果をまとめました。【p】（solar_news_alert_short）
 （when,（乱数1～3）==1,アナウンサーの（solar_news_current_personality_daytime）です。【p】）街の話題をお伝えします。【p】（solar_news_daytime_topic）
 （when,（乱数1～3）==1,昼のニュース担当（solar_news_current_personality_daytime）です。【p】）午前中に入った話題です。【p】（solar_news_daytime_topic）
 （when,（乱数1～3）==1,（solar_news_current_personality_daytime）が昼のニュースをお伝えします。【p】）（solar_news_daytime_topic）
@@ -516,9 +585,9 @@
 
 ＠solar_news_incident_type
 午前中、市民の方から「夜中に城壁の外で物音がした」との相談がありました。【r】警備部が確認したところ、野生の鹿の足跡が見つかり、災厄ではありませんでした。
-各地域での通常警備活動により、午前中の安全確認が終わりました。【r】異常はありません。
+各地域での通常警備活動により、午前中の安全確認が終わりました。【r】（solar_news_alert_short）
 防備部の銃器と銀の弾の定期点検・整備が完了しました。【r】すべて使用できる状態です。
-昨日駆除された災厄の、晃体分解処理作業が完了しました。【r】放出された晃体は、すでに周囲に散っています。【r】現場付近への立ち入り制限は、本日正午をもって解除されました。
+午前中、南の荒れ地で駆除された動物型災厄の、晃体の分解処理が終わりました。【r】放出された晃体は、すでに周囲に散っています。【r】現場付近への立ち入り制限は、本日正午をもって解除されました。
 住民の方からの通報に基づき、西門付近の現地確認を行いました。【r】倒木が蔓に見えたためで、災厄ではありませんでした。【r】通報にご協力いただき、ありがとうございます。
 定期巡回による地域安全点検を、本日は市街の南側で実施しました。
 災厄警戒システムの定期動作確認を行い、警鐘と晃石センサーがすべて正常に働くことを確かめました。
@@ -590,7 +659,7 @@
 以上、昼のニュースでした。【r】続報が入り次第、夕方のニュースで改めてお伝えします。
 現在、協会の各部署が連携して午前中の報告の詳しい分析を進めており、市民の皆様により正確で有用な情報をお届けできるよう準備を整えております。
 午後の巡回の結果は、夕方のニュースでお伝えします。
-協会の専門調査チームが、昨日の災厄の目撃地点で現地調査を実施中です。【r】結果がまとまり次第、お伝えします。
+協会の専門調査チームが、災厄の出やすい郊外の窪地で、定期の現地調査を行っています。【r】調査の結果は、協会本部の掲示板に張り出されます。
 最新情報は協会公式発表をご確認ください。【r】協会本部の掲示板にも、毎日正午に張り出されます。
 協会では情報の透明性を重視し、確認された事実に基づく正確な情報のみをお伝えするよう努めております。
 各地域の協会事務所でも同様の情報を提供しておりますので、詳細につきましてはお近くの事務所までお問い合わせください。
@@ -605,6 +674,7 @@
 （solar_news_夜_seasonal_policy）
 （solar_news_夜_policy_brief）
 （solar_news_夜_emergency_review）
+（solar_news_夜_safety_brief）
 （solar_news_夜_closing_brief）
 
 ＠solar_news_夜_weather_forecast
@@ -703,7 +773,7 @@
 （when,（乱数1～3）==1,日中総括担当の（solar_news_current_personality_evening）です。【r】）本日の各部署の活動成果と安全管理状況をお伝えします。【r】（solar_news_daily_safety_summary）
 
 ＠solar_news_daily_safety_summary
-本日の災厄警戒システムは正常に稼働し、異常事態の発生はありませんでした。
+本日の災厄警戒システムは、終日正常に稼働しました。
 各地域の安全パトロールにより、市民の皆様の安全が確保されました。
 緊急対応システムの待機状態を終日維持し、即応体制を整えておりました。
 晃波通信網の安定稼働により、各地域との連絡体制に問題はありませんでした。
@@ -712,7 +782,13 @@
 交通安全対策の効果により、重大事故の発生を防ぐことができました。
 災厄対策装備の定期チェックを実施し、万全の準備状態を維持いたします。
 本日、郊外で動物型災厄（乱数1～3）体が確認され、いずれも城壁に近づく前に駆除されました。【r】市街への被害はありません。
-本日出発した交易隊は、すべて予定どおり目的地の宿場に到着したとの連絡がありました。
+本日出発した交易隊の到着の連絡が、各宿場から届いています。
+本日、北の街道を進んでいた交易隊が動物型災厄に襲われ、護衛の武僧が銀の弾で退けました。【r】荷車1台と荷の一部を失いましたが、隊員は全員、宿場にたどり着いています。
+
+＠solar_news_夜_safety_brief
+夜の災厄警戒情報です。【p】（solar_news_danger_level）
+協会防備部から、閉門前の警戒状況をお伝えします。【p】（solar_news_danger_level）
+（when,（乱数1～3）==1,（solar_news_current_personality_evening）です。【r】）現在の警戒レベルをお伝えします。【p】（solar_news_danger_level）
 
 ＠solar_news_夜_closing_brief
 明日も太陽協会ニュースをお聞きください。【r】今夜という静かな時間が、皆様にとって心安らぐひとときとなりますように。
@@ -753,10 +829,9 @@
 （when,（乱数1～3）==1,（solar_news_current_personality_late）がお伝えします。【r】）協会災厄対策本部からの深夜状況報告です。【r】（solar_news_disaster_monitoring）
 
 ＠solar_news_disaster_monitoring
-現在、災厄の兆候は観測されていません。【r】晃波探知システム正常稼働中です。
-各地域の災厄センサー、すべて正常値を示しています。
+晃波探知システム正常稼働中です。【r】（solar_news_alert_short）
 災厄対策用緊急避難所の点検が完了いたしました。【r】いつでも使用可能な状態です。
-深夜の災厄警戒レベルは「平常」を維持しております。
+深夜の災厄警戒レベルです。【r】（solar_news_alert_short）
 晃波による災厄早期警戒ネットワークが24時間監視を継続中です。
 災厄対策装備の定期点検により、全システム正常動作を確認いたしました。
 各地域の避難経路の安全確保が深夜も継続されています。
@@ -765,22 +840,30 @@
 深夜帯の災厄対策要員が規定数配置されており、即応体制が整っております。
 動物型の災厄は、夜に動くことの多いものもいます。【r】そのため、夜間の監視哨には、晃覚の特に強い探知員が配置されています。
 
+＃ 警戒状況が平常のときだけ
+＠solar_news_disaster_monitoring	（solar_news_alert）==normal
+現在、災厄の兆候は観測されていません。【r】晃波探知システム正常稼働中です。
+各地域の災厄センサー、すべて正常値を示しています。
+
 ＠solar_news_深夜_patrol_report
 夜間巡回の報告です。【r】（solar_news_patrol_status）
 深夜の警備状況をお伝えします。【r】（solar_news_patrol_status）
 各地域の安全状況について。【r】（solar_news_patrol_status）
 （when,（乱数1～3）==1,担当の（solar_news_current_personality_late）です。【r】）深夜の巡回結果を報告いたします。【r】（solar_news_patrol_status）
-（when,（乱数1～3）==1,（solar_news_current_personality_late）が報告します。【r】）深夜帯の安全状況ですが、全地域において良好な状態が継続しています。【r】（solar_news_patrol_status）
+（when,（乱数1～3）==1,（solar_news_current_personality_late）が報告します。【r】）深夜帯の巡回結果です。【r】（solar_news_patrol_status）
 
 ＠solar_news_patrol_status
-各地域、異常なし。
 通常の警備活動継続中。
 みなさまの安全は確保されています。
 深夜帯も協会が見守り中。
-全地域での定期巡回を完了、安全な状態を確認しました。
 午前0時の見回りでは、城壁の東側で、消し忘れの焚き火が1件見つかり、消火しました。
 市街の北側の巡回で、道に迷っていた旅の方を、宿まで案内しました。
 四つの城門すべてで、閂がかかっていることを確認しました。
+
+＃ 警戒状況が平常のときだけ
+＠solar_news_patrol_status	（solar_news_alert）==normal
+各地域、異常なし。
+全地域での定期巡回を完了、安全な状態を確認しました。
 
 ＠solar_news_深夜_emergency_protocol
 緊急時対応プロトコル確認です。【r】（solar_news_emergency_protocol_status）

@@ -76,6 +76,7 @@
 ＄文「＊」の重複回避	有効、起動中
 ＄単語群「＊」の重複回避	有効、起動中
 ＄tmp	（nop,（判定変動））
+＄solar_news_alert_prev	normal
 ＄soundscapes_talk_count	（乱数0～7）
 ＄メニュー閉じるフラグ	0
 

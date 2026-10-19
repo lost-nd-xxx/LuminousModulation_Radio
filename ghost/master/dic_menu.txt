@@ -76,7 +76,5 @@
 
 ＊Onラジオ局設定
 ＄現在のラジオ局	（R0）
-＄soundscapes_current_title	
-＄soundscapes_current_title_setタイマ	
 ：（0）\c\![quicksection,true]φ
 「（R0）」の周波数にチューニングしたφ。

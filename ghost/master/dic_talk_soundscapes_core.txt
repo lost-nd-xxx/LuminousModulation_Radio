@@ -25,7 +25,8 @@
 ：（soundscapes_dj_talk）
 
 ＊OnTalk_SoundScapes_Lylic
-＄soundscapes_current_section	（whenlist,（nop,）,（calc,(（soundscapes_talk_count）+1)%8）||（calc,(（soundscapes_talk_count）+5)%8）,Aメロ,（calc,(（soundscapes_talk_count）+2)%8）||（calc,(（soundscapes_talk_count）+6)%8）,Bメロ,（calc,(（soundscapes_talk_count）+3)%8）||（calc,(（soundscapes_talk_count）+7)%8）,サビ,サビ）
+＃ 8 回で 1 周（0=曲紹介、4=DJトーク）。歌詞は 1・5=Aメロ、2・6=Bメロ、3・7=サビ
+＄soundscapes_current_section	（whenlist,（calc,（soundscapes_talk_count）%4）,==1,Aメロ,==2,Bメロ,サビ）
 ：（soundscapes_lyric_（現在の時間帯）_（soundscapes_current_section））
 （soundscapes_lyric_（現在の時間帯）_（soundscapes_current_section））
 ＄soundscapes_current_section	
@@ -34,37 +35,24 @@
 ＃ 基本語彙
 ＃=====================================
 
-＠soundscapes_lyric_語彙_助詞
-に
-を
-は
-が
-と
-で
-から
-まで
-へ
-の
-
-＃ 品詞別助詞カテゴリ
-＠soundscapes_lyric_語彙_助詞_名詞用
-の
-に
-を
-が
-と
-
+＃ 助詞は、後ろに続く語で使い分ける（前に来るのは名詞）
+＃ 動詞（＠soundscapes_lyric_語彙_動詞_終止形 など）の前。動詞は自動詞が多いので「を」は入れない
 ＠soundscapes_lyric_語彙_助詞_動詞用
-て
-で
-から
-によって
-を通して
-
-＠soundscapes_lyric_語彙_助詞_情緒的
+が
+は
+に
 へ
 へと
-に向かって
+で
+から
+と
+
+＃ 名詞の前
+＠soundscapes_lyric_語彙_助詞_名詞用
+の
+と
+への
+からの
 
 ＠soundscapes_lyric_語彙_で
 で
@@ -325,16 +313,22 @@
 外壁
 見張り台
 
-＃ 空が見えることを前提にした語（快晴・晴れのときだけ）
-＠soundscapes_lyric_語彙_名詞_具象	（北部_天気）==快晴||（北部_天気）==晴れ
+＃ 空が見えることを前提にした語（快晴・晴れのときだけ。時間帯でも絞る）
+＠soundscapes_lyric_語彙_名詞_具象	((（北部_天気）==快晴)||(（北部_天気）==晴れ))&&(（現在の時間帯）==朝)
+朝焼け
+
+＠soundscapes_lyric_語彙_名詞_具象	((（北部_天気）==快晴)||(（北部_天気）==晴れ))&&((（現在の時間帯）==朝)||(（現在の時間帯）==昼))
 太陽
+木漏れ日
+陽だまり
+
+＠soundscapes_lyric_語彙_名詞_具象	((（北部_天気）==快晴)||(（北部_天気）==晴れ))&&((（現在の時間帯）==昼)||(（現在の時間帯）==夜))
+夕映え
+
+＠soundscapes_lyric_語彙_名詞_具象	((（北部_天気）==快晴)||(（北部_天気）==晴れ))&&((（現在の時間帯）==夜)||(（現在の時間帯）==深夜))
 月
 星
 銀河
-木漏れ日
-夕映え
-朝焼け
-陽だまり
 オーロラ
 
 ＃ 冬の語（北部が冬のときだけ）

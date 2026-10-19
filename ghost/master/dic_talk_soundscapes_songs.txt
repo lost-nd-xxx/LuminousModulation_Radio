@@ -129,7 +129,7 @@
 
 ＠soundscapes_title_昼_pattern
 （soundscapes_title_語彙_形容詞_昼）（soundscapes_lyric_語彙_名詞_具象）の調べ
-（soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）（soundscapes_lyric_語彙_感情_名詞_ニュートラル）
+（soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞_名詞用）（soundscapes_lyric_語彙_感情_名詞_ニュートラル）
 心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）午後のひととき
 想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）昼下がりの調べ
 午後の（soundscapes_lyric_語彙_名詞_抽象）

@@ -29,4 +29,5 @@
 ＄西部_天気	晴れ
 ＄soundscapes_talk_count	0
 ＄soundscapes_current_title	虚ろな響き
+＄soundscapes_current_instrument	ピアノ
 ＄メニュー閉じるフラグ	0

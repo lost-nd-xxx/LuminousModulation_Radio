@@ -24,8 +24,6 @@
 （soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_朝_始まり）、（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
 明るい（soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
 想い（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　空へと
-心（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　朝日と共に
-魂（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　光に包まれて
 思い（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　新しい朝に
 感覚（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　希望の光と
 （soundscapes_lyric_語彙_名詞_抽象）（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　この瞬間
@@ -38,7 +36,6 @@
 （soundscapes_lyric_語彙_朝_始まり）（soundscapes_lyric_語彙_助詞）（soundscapes_lyric_語彙_動詞_終止形）
 今日という\w3　（soundscapes_lyric_語彙_名詞_具象）
 （soundscapes_lyric_語彙_感情_名詞_ポジティブ）、（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
-心（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　朝日と共に
 魂（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　新たな世界へ
 想い（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　希望の歌を
 （soundscapes_lyric_語彙_名詞_具象）よ、（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_抽象）
@@ -83,7 +80,6 @@
 （soundscapes_lyric_語彙_感情_名詞_ニュートラル）\w3　（soundscapes_lyric_語彙_名詞_抽象）
 （soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_動詞_終止形）\w3　（soundscapes_lyric_語彙_名詞_抽象）
 心地よい（soundscapes_lyric_語彙_名詞_具象）
-心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　午後の陽だまりに
 魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　穏やかな時間と
 想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　日常の美しさ
 （soundscapes_lyric_語彙_感情_名詞_ニュートラル）\w3　（soundscapes_lyric_語彙_名詞_抽象）
@@ -111,14 +107,13 @@
 （soundscapes_lyric_語彙_夜_情緒）\w3　心に響く
 夜の（soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_夜_静寂）
 （soundscapes_lyric_語彙_夜_内省）の中で\w3　（soundscapes_lyric_語彙_動詞_終止形）
-深夜の（soundscapes_lyric_語彙_夜_情緒）（soundscapes_lyric_語彙_助詞）\w3　感じて
+今夜の（soundscapes_lyric_語彙_夜_情緒）（soundscapes_lyric_語彙_助詞）\w3　感じて
 （soundscapes_lyric_語彙_形容詞_終止形）闇と\w3　（soundscapes_lyric_語彙_名詞_抽象）
 
 ＠soundscapes_lyric_夜_Bメロ	（北部_天気）!=雨&&（北部_天気）!=雷雨&&（北部_天気）!=嵐
 （soundscapes_lyric_語彙_名詞_抽象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_に）包まれて
 （soundscapes_lyric_語彙_感情_名詞_ニュートラル）（soundscapes_lyric_語彙_名詞_抽象）、静かに（soundscapes_lyric_語彙_動詞_終止形）
 想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　夜空へ
-心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　星明りに
 魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　静寂の中で
 キオク（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　闇の中で
 （soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）\w3　見上げながら
@@ -136,7 +131,6 @@
 （soundscapes_lyric_語彙_名詞_具象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_抽象）
 永遠の\w3　（soundscapes_lyric_語彙_名詞_具象）
 心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　夜空に響いて
-魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　星明りと共に
 想い（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　静寂の歌を
 （soundscapes_lyric_語彙_感情_名詞_ニュートラル）\w3　（soundscapes_lyric_語彙_名詞_抽象）よ
 （soundscapes_lyric_語彙_名詞_抽象）の中で\w3　（soundscapes_lyric_語彙_動詞_終止形）
@@ -197,3 +191,157 @@
 無限の夜に\w3　（soundscapes_lyric_語彙_深夜_幻想）を歌おう
 （soundscapes_lyric_語彙_深夜_神秘）と（soundscapes_lyric_語彙_深夜_超越）の\w3　交響曲
 永遠の（soundscapes_lyric_語彙_名詞_抽象）（soundscapes_lyric_語彙_助詞）\w3　（soundscapes_lyric_語彙_動詞_終止形）
+
+＃=====================================
+＃ 晴れの日だけの歌詞（快晴・晴れ）
+＃ 朝日・陽だまり・星明りなど、空が見えることを前提にした行
+＃=====================================
+
+＠soundscapes_lyric_朝_Bメロ	（北部_天気）==快晴||（北部_天気）==晴れ
+心（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　朝日と共に
+魂（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　光に包まれて
+雲ひとつない\w3　（soundscapes_lyric_語彙_朝_清新）
+
+＠soundscapes_lyric_朝_サビ	（北部_天気）==快晴||（北部_天気）==晴れ
+心（soundscapes_lyric_語彙_感情_動詞_ポジティブ）\w3　朝日と共に
+青い空へ\w3　（soundscapes_lyric_語彙_朝_希望）を
+
+＠soundscapes_lyric_昼_サビ	（北部_天気）==快晴||（北部_天気）==晴れ
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　午後の陽だまりに
+木漏れ日の下で\w3　（soundscapes_lyric_語彙_昼_安らぎ）
+
+＠soundscapes_lyric_夜_Bメロ	（北部_天気）==快晴||（北部_天気）==晴れ
+心（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　星明りに
+澄んだ夜空に\w3　（soundscapes_lyric_語彙_夜_内省）
+
+＠soundscapes_lyric_夜_サビ	（北部_天気）==快晴||（北部_天気）==晴れ
+魂（soundscapes_lyric_語彙_感情_動詞_ニュートラル）\w3　星明りと共に
+月の光に\w3　（soundscapes_lyric_語彙_夜_情緒）を
+
+＃=====================================
+＃ 雪の日の歌詞
+＃=====================================
+
+＠soundscapes_lyric_朝_Aメロ	（北部_天気）==雪
+降り積もる雪に\w3　（soundscapes_lyric_語彙_名詞_抽象）を埋めて
+白い朝の\w3　（soundscapes_lyric_語彙_朝_始まり）
+足跡ひとつ\w3　新しい雪に
+
+＠soundscapes_lyric_朝_Bメロ	（北部_天気）==雪
+吐く息の白さに\w3　（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
+雪明りの窓辺で\w3　（soundscapes_lyric_語彙_動詞_終止形）
+音を吸い込む\w3　雪の朝
+
+＠soundscapes_lyric_朝_サビ	（北部_天気）==雪
+雪よ\w3　（soundscapes_lyric_語彙_朝_希望）を隠さないで
+白く\w3　白く\w3　（soundscapes_lyric_語彙_名詞_抽象）を塗り替えて
+凍える指で\w3　（soundscapes_lyric_語彙_朝_始まり）
+
+＠soundscapes_lyric_昼_Aメロ	（北部_天気）==雪
+雪かきの音が\w3　午後に響く
+白い屋根の\w3　（soundscapes_lyric_語彙_昼_日常）
+薪のはぜる音と\w3　（soundscapes_lyric_語彙_昼_安らぎ）
+
+＠soundscapes_lyric_昼_Bメロ	（北部_天気）==雪
+窓の外は\w3　しんしんと
+湯気の向こうに\w3　（soundscapes_lyric_語彙_昼_温もり）
+雪の午後を\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_抽象）
+
+＠soundscapes_lyric_昼_サビ	（北部_天気）==雪
+降りやまない雪と\w3　（soundscapes_lyric_語彙_昼_安らぎ）
+白い午後に\w3　（soundscapes_lyric_語彙_感情_名詞_ニュートラル）
+凍えた手に\w3　（soundscapes_lyric_語彙_昼_温もり）
+
+＠soundscapes_lyric_夜_Aメロ	（北部_天気）==雪
+雪明りの\w3　（soundscapes_lyric_語彙_夜_静寂）
+降り積もる音さえ\w3　聞こえる夜
+白い道に\w3　（soundscapes_lyric_語彙_夜_内省）
+
+＠soundscapes_lyric_夜_Bメロ	（北部_天気）==雪
+晃石灯の輪に\w3　雪が舞う
+凍える夜に\w3　（soundscapes_lyric_語彙_夜_情緒）
+足跡を\w3　雪が消していく
+
+＠soundscapes_lyric_夜_サビ	（北部_天気）==雪
+雪よ\w3　（soundscapes_lyric_語彙_名詞_抽象）を覆って
+白い夜に\w3　（soundscapes_lyric_語彙_夜_内省）
+雪の静けさに\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_抽象）
+
+＠soundscapes_lyric_深夜_Aメロ	（北部_天気）==雪
+降り積もる……　（soundscapes_lyric_語彙_深夜_神秘）……
+雪の夜の\w3　（soundscapes_lyric_語彙_深夜_幻想）……
+白い闇……　（soundscapes_lyric_語彙_感情_名詞_ネガティブ）……
+
+＠soundscapes_lyric_深夜_Bメロ	（北部_天気）==雪
+音のない雪……　（soundscapes_lyric_語彙_名詞_抽象）……
+凍てつく夜……　（soundscapes_lyric_語彙_深夜_超越）……
+雪の底で\w3　（soundscapes_lyric_語彙_動詞_終止形）……
+
+＠soundscapes_lyric_深夜_サビ	（北部_天気）==雪
+雪よ……　（soundscapes_lyric_語彙_名詞_抽象）を眠らせて……
+白く……　白く……　（soundscapes_lyric_語彙_感情_名詞_ネガティブ）……
+雪明りの\w3　（soundscapes_lyric_語彙_深夜_神秘）……
+
+＃=====================================
+＃ くもりの日の歌詞
+＃=====================================
+
+＠soundscapes_lyric_朝_Aメロ	（北部_天気）==くもり
+薄曇りの朝に\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_抽象）
+雲の向こうの\w3　（soundscapes_lyric_語彙_朝_希望）
+灰色の空にも\w3　（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
+
+＠soundscapes_lyric_朝_Bメロ	（北部_天気）==くもり
+雲の切れ間を\w3　待ちながら
+やわらかな曇り日の\w3　（soundscapes_lyric_語彙_朝_清新）
+影のない朝に\w3　（soundscapes_lyric_語彙_名詞_抽象）（soundscapes_lyric_語彙_動詞_終止形）
+
+＠soundscapes_lyric_朝_サビ	（北部_天気）==くもり
+雲よ\w3　（soundscapes_lyric_語彙_名詞_抽象）を運んで
+見えない陽射しに\w3　（soundscapes_lyric_語彙_朝_始まり）
+曇り空でも\w3　（soundscapes_lyric_語彙_感情_名詞_ポジティブ）
+
+＠soundscapes_lyric_昼_Aメロ	（北部_天気）==くもり
+曇り空の\w3　（soundscapes_lyric_語彙_昼_日常）
+灰色の午後に\w3　（soundscapes_lyric_語彙_動詞_終止形）（soundscapes_lyric_語彙_名詞_具象）
+影の薄い\w3　昼下がり
+
+＠soundscapes_lyric_昼_Bメロ	（北部_天気）==くもり
+雲の流れを\w3　数えながら
+降りそうで降らない\w3　午後の空
+薄明かりに\w3　（soundscapes_lyric_語彙_昼_安らぎ）
+
+＠soundscapes_lyric_昼_サビ	（北部_天気）==くもり
+曇りのち\w3　（soundscapes_lyric_語彙_感情_名詞_ニュートラル）
+雲の下の\w3　（soundscapes_lyric_語彙_昼_温もり）
+灰色の空に\w3　（soundscapes_lyric_語彙_名詞_抽象）（soundscapes_lyric_語彙_動詞_終止形）
+
+＠soundscapes_lyric_夜_Aメロ	（北部_天気）==くもり
+星の見えない夜に\w3　（soundscapes_lyric_語彙_夜_内省）
+雲に隠れた\w3　月を想う
+灰色の夜空に\w3　（soundscapes_lyric_語彙_夜_情緒）
+
+＠soundscapes_lyric_夜_Bメロ	（北部_天気）==くもり
+雲の向こうの\w3　（soundscapes_lyric_語彙_名詞_抽象）
+晃石灯だけが\w3　灯る夜
+低い雲に\w3　（soundscapes_lyric_語彙_夜_静寂）
+
+＠soundscapes_lyric_夜_サビ	（北部_天気）==くもり
+見えない星にも\w3　（soundscapes_lyric_語彙_名詞_抽象）を
+雲よ\w3　（soundscapes_lyric_語彙_夜_情緒）を隠して
+曇り夜の\w3　（soundscapes_lyric_語彙_夜_静寂）
+
+＠soundscapes_lyric_深夜_Aメロ	（北部_天気）==くもり
+月のない夜……　（soundscapes_lyric_語彙_深夜_神秘）……
+厚い雲の下……　（soundscapes_lyric_語彙_感情_名詞_ネガティブ）……
+雲の帳に\w3　（soundscapes_lyric_語彙_深夜_幻想）……
+
+＠soundscapes_lyric_深夜_Bメロ	（北部_天気）==くもり
+星のない空……　（soundscapes_lyric_語彙_名詞_抽象）……
+雲の切れ間を……　待ちわびて……
+闇を重ねる\w3　雲の層……
+
+＠soundscapes_lyric_深夜_サビ	（北部_天気）==くもり
+雲の彼方の……　（soundscapes_lyric_語彙_深夜_超越）……
+月を隠して……　（soundscapes_lyric_語彙_名詞_抽象）……
+灰色の夜に\w3　（soundscapes_lyric_語彙_深夜_神秘）……

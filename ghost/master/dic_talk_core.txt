@@ -16,6 +16,7 @@
 ＄tmp	（nop,（季節判定））
 ＄tmp	（nop,（天気判定））
 ＄soundscapes_current_title	（soundscapes_title_（現在の時間帯）_pattern）
+＄soundscapes_current_instrument	（soundscapes_楽器_（現在の時間帯））
 
 
 ＊時間帯判定
